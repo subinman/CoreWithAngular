@@ -1,0 +1,29 @@
+--add any project to git repo
+1. git init
+2.git add .
+3.git commit -m "initil project"
+4.git remote add origin https://github.com/subinman/CoreWithAngular.git   --for adding project to remote repo
+5.git push -f origin master
+------------------------------------------
+make new branch with existing repo
+1. git checkout -b branchName eg: dev
+-----------------------------------------
+make merge with master or other existing repo
+
+1.git checkout workingRepoName eg: dev
+2.git pull origin dev   --to check project working or not
+a. git status
+b. git add .
+c. git commit -m "comment"
+d.git push origin dev
+2.git checkout master
+a. git status
+b. git add .
+c. git commit -m "comment"
+d.git push origin dev
+3. git merge dev
+a. resolve the conflict
+a. git status
+b. git add .
+c. git commit -m "comment"
+d.git push origin master
